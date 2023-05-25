@@ -41,6 +41,7 @@ for country, capital in questions.items():
         print("Incorrect Answer!")
 
     print(f"Time taken: {question_time:.2f} seconds\n")
+    total_time += question_time
 
 # print(f"\nQuiz completed! You scored {score} out of {len(questions)}.")
 print("\nQuiz Summary")
@@ -48,3 +49,8 @@ print("--------------")
 print(f"Total Questions: {total_questions}")
 print(f"Correct Answers: {correct_answers}")
 print(f"Total Time: {total_time:.2f} seconds")
+
+if correct_answers >= 6:
+    print("Congratulations! You passed the game.")
+else:
+    print("Sorry! You failed the game.")
