@@ -1,7 +1,7 @@
 import time
 print("Welcome to my Quiz Game!")
 
-playing = input("Do you want to play? (yes/no): ").lower()
+playing = input("Do you want to play? (yes/no): \n").lower()
 if playing != "yes":
     quit()
 
@@ -28,10 +28,7 @@ total_time = 0
 
 for country, capital in questions.items():
     start_time = time.time() 
-    answer = input(f"What is the capital city of {country}? ").lower()
-    """
-    Start time for each question
-    """
+    answer = input(f"What is the capital city of {country}? \n").lower()
     end_time = time.time() 
     question_time = end_time - start_time  # Time taken to answer the question
     if answer == capital.lower():
