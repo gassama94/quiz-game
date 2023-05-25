@@ -1,31 +1,54 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz Game
+Welcome to my Quiz Game! This is a simple Python program that asks questions about the capital cities of different European countries and checks if the provided answers are correct.
 
-Welcome Saikou Gassama,
+## Introduction
+This is project number three out of five for Code Institute full-stack development program: Python Terminal.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The Quiz is made in the Python terminal and runs in the Code Institute mock terminal Heroku. The Quiz will test the player's knowledge about some of the worlds mysteries!
 
-## Reminders
+## How to Play
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+1. Clone the repository to your local machine.
+2. Make sure you have Python installed.
+3. Open a terminal or command prompt and navigate to the project directory.
+4. Run the following command to start the game:
+5. Answer the questions by typing the name of the capital city in lowercase.
+6. The program will tell you if your answer is correct or incorrect.
+7. Enjoy playing the Quiz Game and test your knowledge of European capital cities!
 
-## Creating the Heroku app
+## User Experience - UX
+### User Stories
+- With this app my goal is to:
+1. Build a clean and easy app to use.
+2. Build a game that is challenging for the player.
+3. As a new user i want to:
+4. Being welcomed and understand what the game is.
+5. Get knowledge of hom many points each question is worth.
+6. Know how well i did in the quiz with score and time tracking functions.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
+### Intro Message
+Welcomes user and informs them about the topic of the quiz. After that user gets the question if they wish to start the game, if yes a timer is displayed to prepare the player.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Game features
+- The quiz contains of 5 questions with 5 alteratives each.
+- The game displays correct or incorrect straight after answer.
+- The game keeps track of users total score.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Questions
 
-Connect your GitHub repository and deploy as normal.
+The Quiz Game includes the following questions:
 
-## Constraints
+- What is the capital city of France?
+- What is the capital city of England?
+- What is the capital city of Norway?
+- What is the capital city of Italy?
+- What is the capital city of Sweden?
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## License
 
------
-Happy coding!
+This project is licensed under the [MIT License](LICENSE).
+
+Feel free to modify and customize the Quiz Game according to your needs. Happy playing!
+

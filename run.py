@@ -1,3 +1,4 @@
+import time
 print("Welcome to my Quiz Game!")
 
 playing = input("Do you want to play? (yes/no): ").lower()
@@ -11,18 +12,39 @@ questions = {
     "England": "London",
     "Norway": "Oslo",
     "Italy": "Rome",
-    "Sweden": "Stockholm"
+    "Sweden": "Stockholm",
+    "Spain": "Madrid",
+    "Germany": "Berlin",
+    "Greece": "Athens",
+    "Netherlands": "Amsterdam",
+    "Portugal": "Lisbon"
 }
 
-score = 0
+
+total_questions = len(questions)
+correct_answers = 0
+total_time = 0
+
 
 for country, capital in questions.items():
+    start_time = time.time() 
     answer = input(f"What is the capital city of {country}? ").lower()
-    
+    """
+    Start time for each question
+    """
+    end_time = time.time() 
+    question_time = end_time - start_time  # Time taken to answer the question
     if answer == capital.lower():
         print("Correct!")
-        score += 1
+        correct_answers += 1
     else:
         print("Incorrect Answer!")
 
-print(f"\nQuiz completed! You scored {score} out of {len(questions)}.")
+    print(f"Time taken: {question_time:.2f} seconds\n")
+
+# print(f"\nQuiz completed! You scored {score} out of {len(questions)}.")
+print("\nQuiz Summary")
+print("--------------")
+print(f"Total Questions: {total_questions}")
+print(f"Correct Answers: {correct_answers}")
+print(f"Total Time: {total_time:.2f} seconds")
